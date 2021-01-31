@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@200&display=swap');
+h1{
+  font-family: 'Overpass', sans-serif;
+  text-align: center;
+  color: white;
+}
+h2{
+  font-family: 'Overpass', sans-serif;
+  text-align: center;
+  color: #4F6367;
+}
+.heading{
+  background-color: #4F6367;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+body{
+  background-color: #B8D8D8;
+}
+p{
+  font-family: 'Overpass', sans-serif;
+  text-align: center;
+  color: #4F6367;
+}
+h3{
+  font-family: 'Overpass', sans-serif;
+  text-align: center;
+  color: #FE5F55;
+}
+.startingtemp{
+  font-family: 'Overpass', sans-serif;
+  text-align: center;
+  color: #FE5F55;
+}
+button{
+  margin-top: 3%;
+  margin-bottom: 3%;
+  font-family: 'Overpass', sans-serif;
+  background-color: #B8D8D8;
+}

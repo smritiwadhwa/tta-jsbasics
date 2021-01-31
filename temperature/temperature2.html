@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href="temperature.css" rel="stylesheet" type="text/css" />
+<title> Temperature Converter </title>
+</head>
+<body>
+  <div class="heading">
+    <h1>Simple Temperature Converter</h1>
+  </div>
+
+  <form>
+    <label for="fname">Enter temperature (C):</label><br>
+    <input type="text" id="fname" name="fname" value=""><br>
+  </form>
+<button onclick="myFunction()"> Calculate Values! </button>
+<hr>
+<h2> Fahrenheight </h2>
+<p> The Fahrenheight value is: </p>
+<h3 id="farvalue">--</h3>
+<hr>
+<h2> Celcius </h2>
+<p> The Celcius value is: </p>
+<h3 id="celvalue">--</h3>
+<hr>
+<h2> Kelvin </h2>
+<p> The Kelvin value is: </p>
+<h3 id="kelvalue">--</h3>
+<script>
+function myFunction() {
+  var startingtemp = document.getElementById("fname").value;
+  if (isNaN(startingtemp)){
+    alert("Please enter a number.");
+    return;
+  }
+  document.getElementById("farvalue").innerHTML = (startingtemp * 1.8) + 32;
+  document.getElementById("celvalue").innerHTML = "" + startingtemp * 1;
+  document.getElementById("kelvalue").innerHTML = (startingtemp *1) + 273.15;
+}
+</script>
+
+</body>
+</html>

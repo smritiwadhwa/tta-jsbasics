@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Viaoda+Libre&display=swap');
+
+.heading{
+  background-color: #8d1c1e;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  box-shadow: 0 0px 100px 20px #dbd9cc;
+}
+h1{
+  text-align: center;
+  color: white;
+  font-family: 'Viaoda Libre', cursive;
+  font-size: 220%;
+
+}
+h2{
+  text-align: center;
+  color: white;
+  font-family: 'Viaoda Libre', cursive;
+  font-size: 190%;
+  margin-top: 2%;
+}
+body{
+  background-color: #2a2a2a;
+}
+*{
+  margin: 0;
+  padding: 0;
+}
+img{
+  border: 7px solid #555;
+  margin-left: 39%;
+  cursor: pointer;
+}
+.posterwords{
+  display: flex;
+}
+hr{
+  box-shadow: 0 0px 100px 20px #dbd9cc;
+  width: 21%;
+  margin-left: 39%;
+  margin-top: 3%;
+}
+
+.words{
+  margin-left: 5%;
+  font-family: 'Viaoda Libre', cursive;
+  color: white;
+}
+
+button{
+  margin-top: 2%;
+  border-radius: 4%;
+  padding: 3%;
+}
+
+</style>
+</head>
+<body>
+  <div class = 'heading'>
+  <h1> <b> Movie Ratings </b></h1>
+</div>
+<h2> Click a poster to see! </h2>
+
+<hr id="cra">
+<img onclick="craFunction()" src="https://m.media-amazon.com/images/M/MV5BMTYxNDMyOTAxN15BMl5BanBnXkFtZTgwMDg1ODYzNTM@._V1_.jpg" width = "20%"></img>
+<hr id="tu">
+<img onclick="tuFunction()" src="https://m.media-amazon.com/images/M/MV5BNzY3NzYyNjI0N15BMl5BanBnXkFtZTgwNjYzMDc0NjM@._V1_.jpg" width = "20%"></img>
+<hr id= "j">
+<img onclick="jFunction()" src="https://m.media-amazon.com/images/M/MV5BODQ0NDhjYWItYTMxZi00NTk2LWIzNDEtOWZiYWYxZjc2MTgxXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_.jpg" width = "20%"></img>
+<hr id="ww">
+<img onclick="wwFunction()" src="https://m.media-amazon.com/images/M/MV5BMTYzODQzYjQtNTczNC00MzZhLTg1ZWYtZDUxYmQ3ZTY4NzA1XkEyXkFqcGdeQXVyODE5NzE3OTE@._V1_.jpg" width = "20%"></img>
+<hr id="jtr">
+<img onclick="jtrFunction()" src="https://m.media-amazon.com/images/M/MV5BNGI1MTAxMWItOTE0OC00ZDhkLWE3Y2EtNjFiZmQ4NjQ1NGNkXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_UY1200_CR67,0,630,1200_AL_.jpg" width = "20%"></img>
+
+
+<script>
+var crazyRichAsians = 98;
+var theUpside = 43;
+var jumanji = 76;
+var wonderWoman = 93;
+var jawsTheRevenge = 6;
+function craFunction() {
+  rating = crazyRichAsians;
+  if(rating>70){
+    document.getElementById("cra").style.boxShadow = "0 0px 70px 20px #32a852";
+  } else if(rating > 40){
+    document.getElementById("cra").style.boxShadow = "0 0px 70px 20px #e3e01e";
+  } else if(rating > 0){
+    document.getElementById("cra").style.boxShadow = "0 0px 70px 20px #8d1c1e";
+  }
+}
+function tuFunction() {
+  rating = theUpside;
+  if(rating>70){
+    document.getElementById("tu").style.boxShadow = "0 0px 70px 20px #32a852";
+  } else if(rating > 40){
+    document.getElementById("tu").style.boxShadow = "0 0px 70px 20px #e3e01e";
+  } else if(rating >0){
+    document.getElementById("tu").style.boxShadow = "0 0px 70px 20px #8d1c1e";
+  }
+}
+function jFunction() {
+  rating = jumanji;
+  if(rating>70){
+    document.getElementById("j").style.boxShadow = "0 0px 70px 20px #32a852";
+  } else if(rating > 40){
+    document.getElementById("j").style.boxShadow = "0 0px 70px 20px #e3e01e";
+  } else if(rating >0){
+    document.getElementById("j").style.boxShadow = "0 0px 70px 20px #8d1c1e";
+  }
+}
+function wwFunction() {
+  rating = wonderWoman;
+  if(rating>70){
+    document.getElementById("ww").style.boxShadow = "0 0px 70px 20px #32a852";
+  } else if(rating > 40){
+    document.getElementById("ww").style.boxShadow = "0 0px 70px 20px #e3e01e";
+  } else if(rating >0){
+    document.getElementById("ww").style.boxShadow = "0 0px 70px 20px #8d1c1e";
+  }
+}
+function jtrFunction() {
+  rating = jawsTheRevenge;
+  if(rating>70){
+    document.getElementById("jtr").style.boxShadow = "0 0px 70px 20px #32a852";
+  } else if(rating > 40){
+    document.getElementById("jtr").style.boxShadow = "0 0px 70px 20px #e3e01e";
+  } else if(rating >0){
+    document.getElementById("jtr").style.boxShadow = "0 0px 70px 20px #8d1c1e";
+  }
+}
+</script>
+
+</body>
+</html>

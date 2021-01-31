@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href="temperature.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+  <div class="heading">
+    <h1>Email Validation</h1>
+  </div>
+
+  <form>
+    <label for="fname">Enter your email address.</label><br>
+    <input type="text" id="fname" name="fname" value=""><br>
+  </form>
+<button onclick="myFunction()"> GO! </button>
+<h2 id="number"></h2>
+<script>
+function myFunction() {
+  var email = document.getElementById("fname").value;
+  var at = email.match("@");
+  alert(at);
+  if(at == "@"){
+    document.getElementById("number").innerHTML = "Your email has been recorded.";
+  } else {
+    document.getElementById("number").innerHTML = "Your email is invalid.";
+
+  }
+}
+</script>
+
+</body>
+</html>

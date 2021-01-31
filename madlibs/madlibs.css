@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=El+Messiri&family=Mountains+of+Christmas:wght@700&family=Shadows+Into+Light&display=swap');
+
+
+h1{
+  text-align: center;
+  font-family: 'Mountains of Christmas', cursive;
+  font-size: 300%;
+  color: white;
+}
+h3{
+  font-family: 'El Messiri', sans-serif;
+}
+*{
+  margin: 0;
+  padding: 0;
+}
+.heading{
+  padding: 3%;
+  background-color: #ec658f;
+}
+body{
+  background-color: #fbfc8b;
+}
+label {
+  font-family: 'El Messiri', sans-serif;
+  color:#ee9068;
+}
+form{
+text-align: center;
+padding: 1%;
+}
+h2{
+  text-align: center;
+  font-family: 'El Messiri', sans-serif;
+  padding-top: 1%;
+  color:#ee9068;
+}
+input{
+  margin-bottom: 1%;
+  padding-bottom: 0.25%;
+  padding-top: 0.25%;
+  padding-right: 0.25%;
+  padding-left: 0.25%;
+}
+
+.body{
+  background-color: #feffcf;
+  width: 75%;
+  margin: auto;
+  padding: 1%;
+}
+
+.footer {
+  background-color:#ee9068;
+  padding: 3%;
+  width: 100%;
+  bottom: 0;
+}
+button{
+  padding-left:1%;
+  padding-right:1%;
+  padding-top:0.25%;
+  margin-top: 1%;
+}
+.flex1{
+  display: flex;
+  text-align: center;
+}
+.inputfield{
+  margin-left: 9.5%;
+  margin-right: 9.5%;
+}

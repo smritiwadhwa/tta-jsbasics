@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title> Shuffle Playlist </title>
+  </head>
+  <style>
+  @import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap');
+  *{
+    margin: 0;
+    padding: 0;
+  }
+  h1{
+    font-family: 'Hammersmith One', sans-serif;
+    color: white;
+    text-align: center;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    font-size: 300%;
+  }
+  body{
+    background-color: black;
+  }
+  .iframe{
+text-align: center;
+ }
+ .center{
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   width: 3%;
+   padding-top: 3%;
+ }
+  </style>
+  <body>
+    <h1> Shuffle Play </h1>
+    <div class= "iframe">
+      <iframe id="songplayer" src="" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+    </div>
+    <img onclick="myFunction()" class="center" src = "https://docs.google.com/drawings/d/e/2PACX-1vSqGOXJNEsXzVZOkfFwpvCrocYOHOB1rmdkCR7OuWCBQkcrf1KbZIDYnbQVm-xrueQUC-qGSJjIXX1g/pub?w=166&h=171" width = "1%"></img>
+    <script>
+    function myFunction() {
+      var song1 = "https://open.spotify.com/embed/track/2qT1uLXPVPzGgFOx4jtEuo";
+      var song2 = "https://open.spotify.com/embed/track/1raaNykBg1bDnWENUiglUA";
+      var song3 = "https://open.spotify.com/embed/track/1P17dC1amhFzptugyAO7Il";
+      var song4 = "https://open.spotify.com/embed/track/1rfofaqEpACxVEHIZBJe6W";
+      var song5 = "https://open.spotify.com/embed/track/5cF0dROlMOK5uNZtivgu50";
+      var song6 = "https://open.spotify.com/embed/track/3Vo4wInECJQuz9BIBMOu8i";
+      var song7 = "https://open.spotify.com/embed/track/0d2iYfpKoM0QCKvcLCkBao";
+      var song8 = "https://open.spotify.com/embed/track/7AzlLxHn24DxjgQX73F9fU";
+      var song9 = "https://open.spotify.com/embed/track/3yOlyBJuViE2YSGn3nVE1K";
+      var song10 = "https://open.spotify.com/embed/track/22vgEDb5hykfaTwLuskFGD";
+      var song11 = "https://open.spotify.com/embed/track/79esEXlqqmq0GPz0xQSZTV";
+      var song12 = "https://open.spotify.com/embed/track/7sWRlDoTDX8geTR8zzr2vt";
+      var song13 = "https://open.spotify.com/embed/track/3UoULw70kMsiVXxW0L3A33";
+      var song14 = "https://open.spotify.com/embed/track/2YzmfPLqUx5CJOaw5ThsBV";
+      var song15 = "https://open.spotify.com/embed/track/2tnVG71enUj33Ic2nFN6kZ";
+      var randomNum = Math.floor(Math.random() * 15);
+      if(randomNum == 0){
+        document.getElementById("songplayer").src = song1;
+      } else if (randomNum == 1){
+        document.getElementById("songplayer").src = song2;
+
+      }else if (randomNum == 2){
+        document.getElementById("songplayer").src = song3;
+
+      }else if (randomNum == 3){
+        document.getElementById("songplayer").src = song4;
+
+      }else if (randomNum == 4){
+        document.getElementById("songplayer").src = song5;
+
+      }else if (randomNum == 5){
+        document.getElementById("songplayer").src = song6;
+
+      }else if (randomNum == 6){
+        document.getElementById("songplayer").src = song7;
+
+      }else if (randomNum == 7){
+        document.getElementById("songplayer").src = song8;
+
+      }else if (randomNum == 8){
+        document.getElementById("songplayer").src = song9;
+
+      }else if (randomNum == 9){
+        document.getElementById("songplayer").src = song10;
+
+      }else if (randomNum == 10){
+        document.getElementById("songplayer").src = song11;
+
+      }else if (randomNum == 11){
+        document.getElementById("songplayer").src = song12;
+
+      }else if (randomNum == 12){
+        document.getElementById("songplayer").src = song13;
+
+      }else if (randomNum == 13){
+        document.getElementById("songplayer").src = song14;
+
+      }else if (randomNum == 14){
+        document.getElementById("songplayer").src = song15;
+
+      } else {
+        document.getElementById("songplayer").src = song15;
+
+      }
+}
+    </script>
+  </body>
+</html>

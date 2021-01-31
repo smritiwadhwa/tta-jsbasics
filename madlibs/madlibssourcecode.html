@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Mad Libs</title>
+    <link href="madlibs.css" rel="stylesheet" type="text/css" />
+  </head>
+  <style>
+  @import url();
+
+  h1{
+    text-align: center;
+    font-family: ;
+    font-size: ;
+    color: ;
+  }
+  h3{
+    font-family:;
+  }
+  *{
+    margin: 0;
+    padding: 0;
+  }
+  .heading{
+    padding: 3%;
+    background-color: #;
+  }
+  body{
+    background-color: #;
+  }
+  label {
+    font-family: ;
+    color: #;
+  }
+  form{
+  text-align: center;
+  padding: 1%;
+  }
+  h2{
+    text-align: center;
+    font-family: ;
+    padding-top: 1%;
+    color: #;
+  }
+  input{
+    margin-bottom: 1%;
+    padding-bottom: 0.25%;
+    padding-top: 0.25%;
+    padding-right: 0.25%;
+    padding-left: 0.25%;
+  }
+
+  .body{
+    background-color: #;
+    width: 75%;
+    margin: auto;
+    padding: 1%;
+  }
+
+  .footer {
+    background-color:#;
+    padding: 3%;
+    width: 100%;
+    bottom: 0;
+  }
+  button{
+    padding-left:1%;
+    padding-right:1%;
+    padding-top:0.25%;
+    margin-top: 1%;
+  }
+  .flex1{
+    display: flex;
+    text-align: center;
+  }
+  .inputfield{
+    margin-left: 9.5%;
+    margin-right: 9.5%;
+  }
+</style>
+  <body>
+    <div id="heading" class = "heading">
+    <h1 id = "top"> ~ Mad Libs ~ </h1>
+  </div>
+  <div id="body"class = "body">
+    <h2 id="instructions"> Enter a word as per the prompt of the form, then click submit to see your story! </h2>
+    <h1 id ="title"> </h1>
+    <h3 id = "story"></h3>
+    <form id ="form">
+      <div class = "inputfield">
+        <label>Word</label><br>
+        <input type="text" id="adj1" name="adj1" value=""><br>
+      </div>
+      <input type="button" value="Submit" onclick="myFunction()"></input>
+    </form>
+  </div>
+  <div id="footer" class= "footer">
+  </div>
+
+    <script>
+      function myFunction() {
+        var adj1 = document.getElementById("adj1").value;
+        //insert your preferred colors here:
+        document.getElementById("heading").style.backgroundColor = "#";
+        document.getElementById("body").style.backgroundColor = "#";
+        document.getElementById("footer").style.backgroundColor = "#";
+        document.body.style.backgroundColor = "#";
+        //these next 2 lines get rid of the form and the instructions on the final page
+        document.getElementById("instructions").innerHTML = "";
+        document.getElementById("form").innerHTML = "";
+        //enter story title here
+        document.getElementById("title").innerHTML = "";
+        //using strings, varaibles, and concatenation, enter your story here:
+        //make sure you change word1 to the type of question
+        document.getElementById("adj1").innerHTML = "The first adjective in my story is: " + adj1 + ".";
+      }
+    </script>
+  </body>
+</html>

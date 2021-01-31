@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+  <style>
+  @import url('https://fonts.googleapis.com/css2?family=Prata&display=swap');
+  .heading{
+    background-color:#C2CCC5;
+  }
+  h1{
+    font-family: 'Prata', serif;
+    color: #360e07;
+    text-align: center;
+    padding: 2%;
+  }
+  *{
+    margin: 0;
+    padding: 0;
+  }
+  body{
+    background-color: #EAE6DF;
+  }
+  .body{
+    display: flex;
+    justify-content: center;
+
+  }
+  .infocard{
+    padding: 5%;
+    margin: 2%;
+  }
+  h2{
+    font-family: 'Prata', serif;
+    color: #360e07;
+  }
+  input{
+    margin-bottom: 3%;
+  }
+  </style>
+  </head>
+  <body>
+    <div class = "heading">
+      <h1> Phonebook </h1>
+    </div>
+    <div class = "body">
+      <div class = "infocard">
+    <form>
+      <label for="fname">Enter name.</label><br>
+      <input type="text" id="name" name="fname" value=""><br>
+      <label for="fname">Enter 10 digit phone number. (no special characters)</label><br>
+      <input type="text" id="number" name="fname" value=""><br>
+      <label for="fname">Enter email address.</label><br>
+      <input type="text" id="email" name="fname" value=""><br>
+      <label for="fname">Notes</label><br>
+      <input type="text" id="notes" name="fname" value=""><br>
+    </form>
+    <button onclick="myFunction()"> GO! </button>
+  </div>
+    <div class = "infocard">
+      <h2 id= "namedisplay"> Name </h2>
+      <h2 id= "numberdisplay"> </h2>
+      <h2 id= "emaildisplay"> </h2>
+      <h2 id= "notesdisplay"> </h2>
+    </div>
+  </div>
+    <script>
+    function myFunction() {
+
+      var number = document.getElementById("number").value;
+      var area = number.substring(0,3);
+      var three = number.substring(3,6);
+      var four = number.substring(6, 10);
+      if (isNaN(number)){
+        document.getElementById("numberdisplay").innerHTML = "Please enter a number.";
+        return;
+      }
+      if(number.length != 10){
+        document.getElementById("numberdisplay").innerHTML = "Please enter a 10 digit phone number.";
+        return;
+      }
+      if(number.substring(0,1) == "0"){
+        document.getElementById("numberdisplay").innerHTML = "Please enter a valid 10 digit phone number.";
+        return;
+      }
+      document.getElementById("numberdisplay").innerHTML = "(" + area + ") " + three + " - " + four;
+    }
+    </script>
+  </body>
+</html>

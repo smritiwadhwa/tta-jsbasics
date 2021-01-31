@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href="temperature.css" rel="stylesheet" type="text/css" />
+<title> Temperature Converter </title>
+</head>
+<body>
+  <div class="heading">
+    <h1>US Phone Number Formatter</h1>
+  </div>
+
+  <form>
+    <label for="fname">Enter number (no special characters):</label><br>
+    <input type="text" id="fname" name="fname" value=""><br>
+  </form>
+<button onclick="myFunction()"> GO! </button>
+<h2 id="number"></h2>
+<script>
+function myFunction() {
+  var number = document.getElementById("fname").value;
+  var area = number.substring(0,3);
+  var three = number.substring(3,6);
+  var four = number.substring(6, 10);
+  if (isNaN(number)){
+    document.getElementById("number").innerHTML = "Please enter a number.";
+    return;
+  }
+  if(number.length != 10){
+    document.getElementById("number").innerHTML = "Please enter a 10 digit phone number.";
+    return;
+  }
+  if(number.substring(0,1) == "0"){
+    document.getElementById("number").innerHTML = "Please enter a valid 10 digit phone number.";
+    return;
+  }
+  document.getElementById("number").innerHTML = "(" + area + ") " + three + " - " + four;
+}
+</script>
+
+</body>
+</html>

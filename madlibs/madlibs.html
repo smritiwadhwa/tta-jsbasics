@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Mad Libs</title>
+    <link href="madlibs.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div id="heading" class = "heading">
+    <h1 id = "top"> ~ Mad Libs ~</h1>
+  </div>
+  <div id="body"class = "body">
+    <h2 id="instructions"> Enter a word as per the prompt of the form, then click submit to see your story! </h2>
+    <h1 id ="title"> </h1>
+  <h3 id = "story"></h3>
+  <form id ="form">
+    <div class="flex1">
+    <div class = "inputfield">
+    <label for="fname">Adjective</label><br>
+    <input type="text" id="adj1" name="adj1" value=""><br>
+  </div>
+  <div class = "inputfield">
+    <label for="fname">Noun (Plural)</label><br>
+    <input type="text" id="plurnoun" name="plurnoun" value=""><br>
+  </div>
+  <div class = "inputfield">
+    <label for="fname">Verb (ending in -ing)</label><br>
+    <input type="text" id="verbing" name="verbing" value=""><br>
+  </div>
+  </div>
+    <div class="flex1">
+    <div class = "inputfield">
+    <label for="fname">Noun (Plural)</label><br>
+    <input type="text" id="plurnoun2" name="plurnoun2" value=""><br>
+  </div>
+  <div class = "inputfield">
+    <label for="fname">Celebrity</label><br>
+    <input type="text" id="celeb" name="celeb" value=""><br>
+  </div>
+  <div class = "inputfield">
+    <label for="fname">Person in the Room</label><br>
+    <input type="text" id="roomperson" name="roomperson" value=""><br>
+  </div>
+  </div>
+    <div class="flex1">
+    <div class = "inputfield">
+    <label for="fname">Silly Name</label><br>
+    <input type="text" id="sillyword" name="sillyword" value=""><br>
+  </div>
+  <div class = "inputfield">
+    <label for="fname">Verb</label><br>
+    <input type="text" id="verb" name="verb" value=""><br>
+  </div>
+  <div class = "inputfield">
+    <label for="fname">Food (Plural)</label><br>
+    <input type="text" id="plurfood" name="plurfood" value=""><br>
+  </div>
+  </div>
+    <div class="flex1">
+    <div class = "inputfield">
+    <label for="fname">Noun</label><br>
+    <input type="text" id="noun" name="noun" value=""><br>
+  </div>
+  <div class = "inputfield">
+    <label for="fname">Adjective</label><br>
+    <input type="text" id="adj2" name="adj2" value=""><br>
+  </div>
+  <div class = "inputfield">
+    <label for="fname">Adjective</label><br>
+    <input type="text" id="adj3" name="adj3" value=""><br>
+  </div>
+  </div>
+    <div class="flex1">
+    <div class = "inputfield">
+    <label for="fname">Adjective</label><br>
+    <input type="text" id="adj4" name="adj4" value=""><br>
+  </div>
+  <div class = "inputfield">
+    <label for="fname">Type of Shoe</label><br>
+    <input type="text" id="typeshoe" name="typeshoe" value=""><br>
+  </div>
+  <div class = "inputfield">
+    <label for="fname">Something Alive</label><br>
+    <input type="text" id="somethingalive" name="somethingalive" value=""><br>
+  </div>
+  </div>
+    <div class="flex1">
+    <div class = "inputfield">
+    <label for="fname">Noun</label><br>
+    <input type="text" id="noun2" name="noun2" value=""><br>
+  </div>
+  <div class = "inputfield">
+    <label for="fname">Verb (ending in -ing)</label><br>
+    <input type="text" id="verbing2" name="verbing2" value=""><br>
+  </div>
+  <div class = "inputfield">
+    <label for="fname">Noun</label><br>
+    <input type="text" id="noun3" name="noun3" value=""><br>
+  </div>
+  </div>
+    <div class="flex1">
+    <div class = "inputfield">
+    <label for="fname">Silly Word</label><br>
+    <input type="text" id="sillyword2" name="sillyword2" value=""><br>
+
+  </div>
+</div>
+<input type="button" value="Submit" onclick="myFunction()"></input>
+  </form>
+
+</div>
+
+<div id="footer" class= "footer">
+</div>
+
+    <script>
+      function myFunction() {
+        var adj1 = document.getElementById("adj1").value;
+        var plurnoun = document.getElementById("plurnoun").value;
+        var verbing = document.getElementById("verbing").value;
+        var plurnoun2 = document.getElementById("plurnoun2").value;
+        var celeb = document.getElementById("celeb").value;
+        var roomperson = document.getElementById("roomperson").value;
+        var sillyword = document.getElementById("sillyword").value;
+        var plurfood = document.getElementById("plurfood").value;
+        var verb = document.getElementById("verb").value;
+        var noun = document.getElementById("noun").value;
+        var adj2 = document.getElementById("adj2").value;
+        var adj3 = document.getElementById("adj3").value;
+        var adj4 = document.getElementById("adj4").value;
+        var typeshoe = document.getElementById("typeshoe").value;
+        var somethingalive = document.getElementById("somethingalive").value;
+        var noun2 = document.getElementById("noun2").value;
+        var verbing2 = document.getElementById("verbing2").value;
+        var noun3 = document.getElementById("noun3").value;
+        var sillyword2 = document.getElementById("sillyword2").value;
+        document.getElementById("heading").style.backgroundColor = "#56bcae";
+        document.getElementById("body").style.backgroundColor = "#b2ede5";
+        document.getElementById("footer").style.backgroundColor = "#a56ee0";
+        document.getElementById("instructions").innerHTML = "";
+        document.getElementById("form").innerHTML = "";
+        document.getElementById("title").innerHTML = "Graduation Party!";
+        document.body.style.backgroundColor = "#91f2ab";
+        document.getElementById("story").innerHTML = "One of the most " + adj1 + " things about graduating is that my " + plurnoun + " are " + verbing + " a huge party! I decided to have a backyard barbeque for all my family and " + plurnoun2 + ". I've invited my best friends, " + celeb + ", " + roomperson + ", and of course my teacher, Mrs. " + sillyword + ". My dad is going to " + verb + " hamburgers and " + plurfood +
+          " on his shiny new " + noun + ". He always thinks his " + plurfood + " tastes really " + adj2 +", but I think they tastes like a " + adj3 + " " + typeshoe + ". My mom is going to make her famous " + somethingalive + " salad, which is my favorite " + noun2 +" ever! Mom said after we finish " + verbing2 + ", we can go swimming in our new " + noun3 + ". " + sillyword2 + "!";
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title> Grocery List </title>
+  </head>
+  <style>
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300&display=swap');
+
+  *{
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    background-color: #F8EFD4;
+    background-image: url('grocerybackground.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+  }
+  h1{
+  font-family: 'Kalam', cursive;
+  font-size: 500%;
+  text-align: center;
+  color: #11451e;
+  }
+  h2{
+  font-family: 'Kalam', cursive;
+  font-size: 200%;
+  text-align: center;
+  color: #11451e;
+  margin: 1%;
+  }
+.list{
+  border-style: double;
+  width: 40%;
+  height: 20em;
+  margin: auto;
+}
+input{
+  padding: 0.5%;
+  font-family: 'Kalam', cursive;
+  color: #11451e;
+  margin: 1%;;
+
+}
+label{
+  font-family: 'Kalam', cursive;
+}
+form{
+  margin: auto;
+  text-align: center;
+  margin-top: 2%;
+}
+  </style>
+  <body>
+    <h1> Grocery List </h1>
+    <div class = "list">
+        <h2 id="items">
+        </h2>
+    </div>
+    <form id ="form">
+      <input type="button" value="Show list!" onclick="myFunction1()"></input>
+      <div class = "inputfield">
+      <label for="fname">Add item (1)</label><br>
+      <input type="text" id="add" name="add" value=""><br>
+    </div>
+      <input type="button" value="Add to list!" onclick="myFunction()"></input>
+    </form>
+    <script>
+    const foodArray = [" milk", " cheese", " strawberries", " cherries", " mangos"];
+    function myFunction(){
+    var newItem = document.getElementById("add").value;
+    foodArray.push(" " + newItem);
+    document.getElementById("items").innerHTML = foodArray;
+  }
+
+  function myFunction1(){
+  document.getElementById("items").innerHTML = foodArray;
+}
+</script>
+  </body>
+</html>
